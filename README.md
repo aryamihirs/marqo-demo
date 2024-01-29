@@ -6,7 +6,7 @@ This guide outlines the setup and execution of the `client.py` for searching wit
 * `pip` (Python package manager)
 
 #### Dataset
-The dataset comprises 30 NFT-styled Bored Apes images. Each image is tagged with descriptions in both English and Spanish, catering to the multilingual search capabilities of Marqo.
+The dataset consists of 30 NFT-styled Bored Apes images. Each image is tagged with descriptions in both English and Spanish, catering to the multilingual search capabilities of Marqo.
 
 #### Sample Queries
 The script is pre-configured with the following sample queries in English and Spanish. Here are example queries to try.
