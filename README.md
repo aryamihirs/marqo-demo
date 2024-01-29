@@ -1,4 +1,4 @@
-#### Running the Multilingual Image Search Client with NFT Styled Bored Apes Dataset
+#### Multilingual Image Search Client with NFT Styled Bored Apes Dataset
 This guide outlines the setup and execution of the `client.py` for searching within a dataset of 30 NFT-styled Bored Apes images using Marqo's Multilingual Image Search.
 
 #### Prerequisites
