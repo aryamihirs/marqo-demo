@@ -181,8 +181,6 @@ if __name__ == '__main__':
 * **Search Execution**: Performs searches using English and Spanish queries.
 * **Result Display**: Outputs the search results and displays the image URLs.
 
-**_Note:_** Find the full implementation on [Github](https://github.com/aryamihirs/marqo-demo).
-
 #### *Best practices and Optimization techniques*
 
 ##### Optimize Index Settings
