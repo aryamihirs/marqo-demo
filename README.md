@@ -8,21 +8,6 @@ This guide outlines the setup and execution of the `client.py` for searching wit
 #### Dataset
 The dataset consists of 30 NFT-styled Bored Apes images. Each image is tagged with descriptions in both English and Spanish, catering to the multilingual search capabilities of Marqo.
 
-#### Sample Queries
-The script is pre-configured with the following sample queries in English and Spanish. Here are example queries to try.
-
-* "A trendsetting primate with eye-catching accessories" / "Un primate pionero con accesorios llamativos"
-* "A contemplative simian sporting urban fashion" / "Un simio contemplativo luciendo moda urbana"
-* "A whimsical monkey with an artistic flair" / "Un mono caprichoso con un toque artístico"
-* "A streetwise ape with a flair for the dramatic" / "Un simio callejero con un sentido dramático"
-* "A cartoon ape showcasing a vibrant persona" / "Un simio de dibujos animados mostrando una personalidad vibrante"
-* "A hip simian in casual chic attire" / "Un simio a la moda en atuendo casual chic"
-* "An avant-garde monkey radiating cool vibes" / "Un mono vanguardista que irradia ondas geniales"
-* "A dapper primate dressed to impress" / "Un primate elegante vestido para impresionar"
-
-#### Modifying Sample Queries
-To test different queries, modify the `query_text` parameter in the `perform_search` function call within `client.py`. This allows for experimentation with various search terms in both English and Spanish.
-
 #### Setting Up and Running Marqo Server
 * [Install Docker](https://docs.docker.com/get-docker/): Required for running the Marqo server.
 * Run Marqo Server:
@@ -72,6 +57,21 @@ python client.py
  
 * `display_image_urls(search_results)`: Extracts and displays image URLs.
   * Iterates over search_results to print each image URL.
+
+#### Sample Queries
+The script is pre-configured with the following sample queries in English and Spanish. Here are example queries to try.
+
+* "A trendsetting primate with eye-catching accessories" / "Un primate pionero con accesorios llamativos"
+* "A contemplative simian sporting urban fashion" / "Un simio contemplativo luciendo moda urbana"
+* "A whimsical monkey with an artistic flair" / "Un mono caprichoso con un toque artístico"
+* "A streetwise ape with a flair for the dramatic" / "Un simio callejero con un sentido dramático"
+* "A cartoon ape showcasing a vibrant persona" / "Un simio de dibujos animados mostrando una personalidad vibrante"
+* "A hip simian in casual chic attire" / "Un simio a la moda en atuendo casual chic"
+* "An avant-garde monkey radiating cool vibes" / "Un mono vanguardista que irradia ondas geniales"
+* "A dapper primate dressed to impress" / "Un primate elegante vestido para impresionar"
+
+#### Modifying Sample Queries
+To test different queries, modify the `query_text` parameter in the `perform_search` function call within `client.py`. This allows for experimentation with various search terms in both English and Spanish.
 
 #### Notes
 * Ensure the hardware requirements (multi-core CPU, CUDA-compatible GPU with at least 8GB memory) are met for optimal performance.
