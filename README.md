@@ -6,19 +6,25 @@ This guide outlines the setup and execution of the `client.py` for searching wit
 * `pip` (Python package manager)
 
 #### Dataset
-The dataset comprises 30 images of NFT-styled Bored Apes. Each image is tagged with descriptions in both English and Spanish, catering to the multilingual search capabilities of Marqo.
+The dataset comprises 30 NFT-styled Bored Apes images. Each image is tagged with descriptions in both English and Spanish, catering to the multilingual search capabilities of Marqo.
 
 #### Sample Queries
-The script is pre-configured with the following sample queries in English and Spanish:
+The script is pre-configured with the following sample queries in English and Spanish. Here are example queries to try.
 
 * "A trendsetting primate with eye-catching accessories" / "Un primate pionero con accesorios llamativos"
 * "A contemplative simian sporting urban fashion" / "Un simio contemplativo luciendo moda urbana"
+* "A whimsical monkey with an artistic flair" / "Un mono caprichoso con un toque artístico"
+* "A streetwise ape with a flair for the dramatic" / "Un simio callejero con un sentido dramático"
+* "A cartoon ape showcasing a vibrant persona" / "Un simio de dibujos animados mostrando una personalidad vibrante"
+* "A hip simian in casual chic attire" / "Un simio a la moda en atuendo casual chic"
+* "An avant-garde monkey radiating cool vibes" / "Un mono vanguardista que irradia ondas geniales"
+* "A dapper primate dressed to impress" / "Un primate elegante vestido para impresionar"
 
 #### Modifying Sample Queries
 To test different queries, modify the `query_text` parameter in the `perform_search` function call within `client.py`. This allows for experimentation with various search terms in both English and Spanish.
 
 #### Setting Up and Running Marqo Server
-* Install Docker: Required for running the Marqo server.
+* [Install Docker](https://docs.docker.com/get-docker/): Required for running the Marqo server.
 * Run Marqo Server:
 
 ###### bash
@@ -29,12 +35,12 @@ This starts the Marqo server on http://localhost:8882
 ```
 
 #### Environment Setup for Client
-* Clone the Repository:
+Clone Repository:
 
 ##### bash
 ```
-git clone [repository URL]
-cd [repository directory]
+git clone https://github.com/aryamihirs/marqo-demo
+cd marqo-demo
 ```
 
 #### Install Dependencies:
@@ -42,8 +48,7 @@ cd [repository directory]
 pip install marqo
 ```
 
-#### Running the Client
-* Execute the Script:
+#### Run Client:
 ```
 python client.py
 ```
@@ -55,7 +60,7 @@ Code Walkthrough
   * `index_name`: Name of the search index, can be customized.
   * `settings`: Configures index settings like model and embedding normalization.
 
-* `populate_index_with_images(mq, index_name, image_data): Populates the index with image data.
+* `populate_index_with_images(mq, index_name, image_data)`: Populates the index with image data.
   * `mq.index(index_name).add_documents(...)`: Marqo method to add image data to the specified index.
   * `tensor_fields`: Specifies which fields are used for tensor operations, critical for the search algorithm.
   * `client_batch_size`: Determines the batch size for adding documents, affecting performance.
@@ -71,4 +76,4 @@ Code Walkthrough
 
 #### Notes
 * Ensure the hardware requirements (multi-core CPU, CUDA-compatible GPU with at least 8GB memory) are met for optimal performance.
-* Refer to the a more detailed version script documentation for more details on implementation and usage.
+* Refer to the a more detailed article for  implementation and usage.
