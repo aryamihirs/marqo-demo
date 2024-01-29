@@ -31,8 +31,8 @@ To test different queries, modify the `query_text` parameter in the `perform_sea
 ```
 docker pull marqo/marqo:latest
 docker run -p 8882:8882 marqo/marqo:latest
-This starts the Marqo server on http://localhost:8882
 ```
+This starts the Marqo server on http://localhost:8882
 
 #### Environment Setup for Client
 Clone Repository:
