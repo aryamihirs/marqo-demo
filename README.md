@@ -54,7 +54,6 @@ python client.py
 ```
 
 #### Code Walkthrough
-Code Walkthrough
 * `initialize_search_index(client_url, index_name, settings)`: Initializes Marqo search index.
   * `client_url`: URL for the Marqo server. Default is "http://localhost:8882".
   * `index_name`: Name of the search index, can be customized.
